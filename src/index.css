@@ -8,33 +8,49 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 220 15% 97%;
+    --foreground: 220 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 158 60% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 30% 95%;
+    --secondary-foreground: 220 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 30% 95%;
+    --muted-foreground: 220 15% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 195 85% 88%;
+    --accent-foreground: 220 25% 15%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 65%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 20% 90%;
+    --input: 210 20% 92%;
+    --ring: 158 60% 50%;
+
+    /* Wellness-specific colors */
+    --wellness-sage: 158 40% 65%;
+    --wellness-sage-light: 158 35% 85%;
+    --wellness-ocean: 195 60% 60%;
+    --wellness-ocean-light: 195 50% 85%;
+    --wellness-warm: 45 80% 80%;
+    --wellness-calm: 220 20% 85%;
+    
+    /* Gradients */
+    --gradient-wellness: linear-gradient(135deg, hsl(var(--wellness-sage-light)), hsl(var(--wellness-ocean-light)));
+    --gradient-mood: linear-gradient(120deg, hsl(var(--wellness-warm)), hsl(var(--wellness-sage-light)));
+    
+    /* Shadows */
+    --shadow-wellness: 0 4px 20px -4px hsl(var(--wellness-sage) / 0.2);
+    --shadow-card: 0 2px 15px -3px hsl(220 20% 50% / 0.1);
 
     --radius: 0.5rem;
 
